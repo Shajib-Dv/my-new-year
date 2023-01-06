@@ -11,7 +11,7 @@
 .banner {
   width: 100%;
   height: 500px;
-  background-image: url("/images/banner/banner3.png");
+  background-image: url("./images/banner/banner3.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: scroll;
@@ -45,6 +45,11 @@
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+.primary-btn:hover {
+  text-decoration: underline;
+  transition: all 1s;
 }
 
 /* about information section */
@@ -90,11 +95,13 @@
   list-style: none;
 }
 
-/* .about-list li::before {
-  content: "=>";
+.about-list li::before {
+  content: url(./images/check-1.png);
   color: #005fac;
   font-size: 16px;
-} */
+  position: relative;
+  top: 6px;
+}
 /* fliped section img custom design */
 .admin-img-container {
   height: 400px;
@@ -128,4 +135,116 @@
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.conect-btn,
+.subscribe-btn {
+  color: white;
+  background-color: #005fac;
+  font-size: 16px;
+  font-weight: bold;
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin: 40px 0 0 200px;
+}
+
+.conect-btn:hover {
+  background-color: #005facc8;
+  transition: all 1s;
+}
+
+/* my plan section */
+
+.plan-container {
+  width: 100%;
+  text-align: center;
+}
+
+.plan-title {
+  color: black;
+  letter-spacing: 2px;
+  padding: 20px 0 100px 0;
+}
+
+.plan-itm-container {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.plan-itm-box > p {
+  color: #444343;
+}
+
+/* watch section */
+
+.watch-container {
+  width: 80%;
+  height: 200px;
+  margin: 80px auto 50px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background-image: url("./images/watch.png"),
+    linear-gradient(90deg, #005fac 0%, rgba(0, 95, 172, 0) 100%);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.watch-content-container {
+  color: #ffffff;
+  width: 50%;
+  margin: 30px 0 50px 30px;
+}
+
+.watch-content-container > h1 {
+  padding: 0 0 10px 0;
+}
+
+/* footer section */
+
+footer {
+  width: 100%;
+  height: 400px;
+  background: #151414;
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+}
+
+.footer-left-section,
+.footer-right-section {
+  height: 200px;
+  width: 300px;
+  margin-top: 100px;
+}
+
+.footer-left-section > p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.3;
+}
+
+.social-media-container {
+  display: flex;
+  gap: 12px;
+}
+
+#email {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.subscribe-btn {
+  margin: 10px 0 0 0;
 }
