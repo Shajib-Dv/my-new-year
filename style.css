@@ -56,7 +56,7 @@
 
 .about-section {
   width: 90%;
-  height: 700px;
+  height: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
